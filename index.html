@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paper Title</title>
+    <title>Unified Grasping</title>
     <link rel="stylesheet" href="assets/css/style.css"> <!-- Link to your CSS -->
 </head>
 <body>
@@ -15,7 +15,7 @@
     <!-- Abstract -->
     <section id="abstract">
         <h2>Abstract</h2>
-        <p>Short summary of your paper. Add links to the PDF and citation.</p>
+        <p>We present a novel transformer-based framework for whole-body grasping that addresses both pose generation and motion infilling, enabling realistic and stable object interactions. Our pipeline comprises three stages: Grasp Pose Generation for full-body grasp generation, Temporal Infilling for smooth motion continuity, and a LiftUp Transformer that refines downsampled joints back to high-resolution markers. To overcome the scarcity of hand-object interaction data, we introduce a data-efficient Generalized Pretraining stage on large, diverse motion datasets, yielding robust spatio-temporal representations transferable to grasping tasks. Experiments on the GRAB dataset show that our method outperforms state-of-the-art baselines in terms of coherence, stability, and visual realism. The modular design also supports easy adaptation to other human-motion applications.</p>
         <a href="assets/paper.pdf" class="button">Download PDF</a>
     </section>
 
@@ -24,13 +24,13 @@
         <h2>Generalized Pretraining</h2>
         <div class="sub-section">
             <h3>Generalized Spatial Transformer</h3>
-            <p>Explain the Generalized Spatial Transformer here.</p>
+            <p>Spatial Transformer is.....</p>
         </div>
         <div class="sub-section">
             <h3>Generalized Temporal Transformer</h3>
             <p>Explain the Generalized Temporal Transformer here.</p>
             <video controls>
-                <source src="assets/videos/video1.mp4" type="video/mp4">
+                <source src="assets/videos/temporalinfilling.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -65,24 +65,24 @@
 
     <!-- Results -->
     <section id="results">
-        <h2>Results</h2>
+        <h2>Motion Infilling Results</h2>
         <div class="sub-section">
-            <h3>Motion Infilling Results</h3>
+            <h3>Improvement on Foot Skating </h3>
             <div class="video-grid">
                 <video controls>
-                    <source src="assets/videos/video1.mp4" type="video/mp4">
+                    <source src="assets/videos/saga1.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <video controls>
-                    <source src="assets/videos/video1.mp4" type="video/mp4">
+                    <source src="assets/videos/saga2.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <video controls>
-                    <source src="assets/videos/video1.mp4" type="video/mp4">
+                    <source src="assets/videos/saga3.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <video controls>
-                    <source src="assets/videos/video1.mp4" type="video/mp4">
+                    <source src="assets/videos/saga4.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -92,7 +92,6 @@
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Edward Effendy. All rights reserved.</p>
-        <p><a href="edwardeffendy07@gmail.com">Contact Me</a></p>
     </footer>
 </body>
 </html>
