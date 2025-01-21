@@ -28,3 +28,28 @@ footer {
     padding: 1rem 0;
     margin-top: 2rem;
 }
+
+
+#videos {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.video-item {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+video {
+    width: 100%;
+    border-radius: 8px;
+}
