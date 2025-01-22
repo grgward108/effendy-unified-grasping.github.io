@@ -21,20 +21,13 @@
 
     <!-- Generalized Pretraining -->
     <section id="generalized-pretraining">
-        <h2>Generalized Pretraining</h2>
         <div class="sub-section">
-            <h3>Generalized Spatial Transformer</h3>
-        </div>
-        <div class="sub-section">
-            <h3>Generalized Temporal Transformer</h3>
+            <h3>Generalized Spatio-Temporal Transformer</h3>
+            <p> We train the Generalizd Spatio-Temporal Transformer to recover noisy videos. </p>
             <video controls>
                 <source src="assets/videos/temporalinfilling.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-        </div>
-        <div class="sub-section">
-            <h3>Generalized Liftup Transformer</h3>
-            <img src="assets/images/liftup.png" alt="Generalized Liftup Transformer Diagram" style="max-width:100%; height:auto;">
         </div>
         
     </section>
@@ -43,23 +36,40 @@
     <section id="three-stage-pipeline">
         <h2>Three-Stage Pipeline</h2>
         <div class="sub-section">
-            <h3>Grasp Pose Generation</h3>
-        </div>
-        <div class="sub-section">
             <h3>Temporal Infilling</h3>
+            <p> We train the model by finetuning the Generalized Spatio-Temporal on the GRAB datatset. The input is a linearly interpolated sequence between the starting input pose and the generated ending grasp pose.  </p>
             <video controls>
                 <source src="assets/videos/video1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-        </div>
-        <div class="sub-section">
-            <h3>Liftup Transformer</h3>
         </div>
     </section>
 
     <!-- Results -->
     <section id="results">
         <h2>Motion Infilling Results</h2>
+        <p> We present the results of our temporal models in comparison to SAGA, in the GRAB dataset. We show that we reduce foot skating, and improved motion smoothness.</p>
+        <div class="sub-section">
+            <h3> Improvement on Motion Smoothness </h3>
+            <div class="video-grid">
+                <video controls>
+                    <source src="assets/videos/saga1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video controls>
+                    <source src="assets/videos/saga2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video controls>
+                    <source src="assets/videos/saga3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video controls>
+                    <source src="assets/videos/saga4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
         <div class="sub-section">
             <h3>Improvement on Foot Skating </h3>
             <div class="video-grid">
